@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="KeramikShop.API/KeramikShop.API.csproj" />
+  <Project Path="KeramikShop.Client/KeramikShop.Client.csproj" />
+</Solution>
