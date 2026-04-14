@@ -1,0 +1,15 @@
+﻿@page "/test"
+@inject HttpClient Http
+
+<h3>API Test</h3>
+
+<p>@message</p>
+
+@code {
+    string message = "Loading...";
+
+    protected override async Task OnInitializedAsync()
+    {
+        message = await Http.GetStringAsync("api/test");
+    }
+}
